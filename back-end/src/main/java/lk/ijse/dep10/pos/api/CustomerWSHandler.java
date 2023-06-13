@@ -19,6 +19,7 @@ public class CustomerWSHandler extends TextWebSocketHandler {
     @Autowired
     private ObjectMapper objectMapper;
 
+
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         try (Connection connection = pool.getConnection()) {
